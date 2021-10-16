@@ -10,21 +10,18 @@ if (surf_init) {
 		surface_reset_target();
 		lastx = o_cloudia.x;
 		lasty = o_cloudia.y;
-	}
-		
-		//gpu_set_blendmode_ext(bm_inv_dest_alpha, bm_src_alpha);
-		gpu_set_blendmode(bm_add);
-			draw_sprite_ext(s_glow, 0, o_cloudia.x, o_cloudia.y, .5, .5, 0, c_lime, 1);
-		gpu_set_blendmode(bm_normal);
-		
-	if (dis > 4) {
+
 		surface_set_target(surf_tunnel);
 			draw_sprite_ext(s_dig, irandom(2), o_cloudia.x, o_cloudia.y-surface_height, 1, 1, random(360), c_white, 1);
 		surface_reset_target();
-		
-		
 	}
 	
+	shader_set(sh_cutoutWhite);
+		draw_surface_ext(surf_tunnel, 0, surface_height, 1, 1, 0, c_white, 1);
+	shader_reset();
+	gpu_set_blendmode(bm_add);
+			draw_sprite_ext(s_glow, 0, o_cloudia.x, o_cloudia.y, 1, 1, 0, c_lime, .3);
+		gpu_set_blendmode(bm_normal);
 	shader_set(sh_cutoutWhite);
 		draw_surface_ext(surf_edge, 0, surface_height, 1, 1, 0, c_white, 1);
 	shader_reset();
