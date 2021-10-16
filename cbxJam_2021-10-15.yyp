@@ -3,9 +3,12 @@
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":0,},
     {"id":{"name":"cloudia_sprite","path":"sprites/cloudia_sprite/cloudia_sprite.yy",},"order":0,},
     {"id":{"name":"lisas_obj","path":"objects/lisas_obj/lisas_obj.yy",},"order":16,},
+    {"id":{"name":"o_environment","path":"objects/o_environment/o_environment.yy",},"order":1,},
+    {"id":{"name":"s_cloud","path":"sprites/s_cloud/s_cloud.yy",},"order":3,},
     {"id":{"name":"o_test","path":"objects/o_test/o_test.yy",},"order":15,},
     {"id":{"name":"cloudia_obj","path":"objects/cloudia_obj/cloudia_obj.yy",},"order":0,},
     {"id":{"name":"s_test","path":"sprites/s_test/s_test.yy",},"order":17,},
+    {"id":{"name":"o_cloud","path":"objects/o_cloud/o_cloud.yy",},"order":2,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
