@@ -4,7 +4,6 @@
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":0,},
     {"id":{"name":"o_lump","path":"objects/o_lump/o_lump.yy",},"order":18,},
     {"id":{"name":"cloudia_sprite","path":"sprites/cloudia_sprite/cloudia_sprite.yy",},"order":0,},
-    {"id":{"name":"lisas_obj","path":"objects/lisas_obj/lisas_obj.yy",},"order":16,},
     {"id":{"name":"o_environment","path":"objects/o_environment/o_environment.yy",},"order":1,},
     {"id":{"name":"s_cloud","path":"sprites/s_cloud/s_cloud.yy",},"order":3,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":1,},
