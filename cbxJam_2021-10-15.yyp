@@ -1,7 +1,13 @@
 {
   "resources": [
+    {"id":{"name":"Shader1","path":"shaders/Shader1/Shader1.yy",},"order":21,},
+    {"id":{"name":"s_lump","path":"sprites/s_lump/s_lump.yy",},"order":19,},
+    {"id":{"name":"o_lump","path":"objects/o_lump/o_lump.yy",},"order":20,},
+    {"id":{"name":"items_generation","path":"scripts/items_generation/items_generation.yy",},"order":18,},
     {"id":{"name":"lisas_obj","path":"objects/lisas_obj/lisas_obj.yy",},"order":16,},
     {"id":{"name":"o_test","path":"objects/o_test/o_test.yy",},"order":15,},
+    {"id":{"name":"o_factory","path":"objects/o_factory/o_factory.yy",},"order":22,},
+    {"id":{"name":"c_lump","path":"animcurves/c_lump/c_lump.yy",},"order":23,},
     {"id":{"name":"s_test","path":"sprites/s_test/s_test.yy",},"order":17,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
