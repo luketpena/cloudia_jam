@@ -1,5 +1,5 @@
 /// @description
 hspd = 0;
 vspd = 0;
-movespd = 10;
-accel = 0.6;
+movespd = 3;
+accel = 0.1;

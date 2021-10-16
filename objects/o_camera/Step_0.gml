@@ -1,0 +1,1 @@
+camera_set_view_pos(view_camera[0], o_cloudia.x-128, o_cloudia.y-128)

@@ -6,17 +6,17 @@
 // Moves "a" towards "b" by "amount" and returns the result
 // Nice bcause it will not overshoot "b", and works in both directions
 function approach(a, b, amount){
-	if (argument0 < argument1)
+	if (a < b)
 	{
-	    argument0 += argument2;
-	    if (argument0 > argument1)
-	        return argument1;
+	    a += amount;
+	    if (b > a)
+	        return b;
 	}
 	else
 	{
-	    argument0 -= argument2;
-	    if (argument0 < argument1)
-	        return argument1;
+	    a -= amount;
+	    if (a < b)
+	        return a;
 	}
-	return argument0;
+	return b;
 }
