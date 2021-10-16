@@ -5,6 +5,7 @@
     {"id":{"name":"o_lump","path":"objects/o_lump/o_lump.yy",},"order":18,},
     {"id":{"name":"cloudia_sprite","path":"sprites/cloudia_sprite/cloudia_sprite.yy",},"order":0,},
     {"id":{"name":"o_environment","path":"objects/o_environment/o_environment.yy",},"order":1,},
+    {"id":{"name":"s_dirt","path":"sprites/s_dirt/s_dirt.yy",},"order":4,},
     {"id":{"name":"s_cloud","path":"sprites/s_cloud/s_cloud.yy",},"order":3,},
     {"id":{"name":"o_camera","path":"objects/o_camera/o_camera.yy",},"order":1,},
     {"id":{"name":"o_factory","path":"objects/o_factory/o_factory.yy",},"order":19,},
