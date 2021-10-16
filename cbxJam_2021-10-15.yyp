@@ -2,6 +2,7 @@
   "resources": [
     {"id":{"name":"lisas_obj","path":"objects/lisas_obj/lisas_obj.yy",},"order":16,},
     {"id":{"name":"o_test","path":"objects/o_test/o_test.yy",},"order":15,},
+    {"id":{"name":"s_test","path":"sprites/s_test/s_test.yy",},"order":17,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
