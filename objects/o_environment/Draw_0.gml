@@ -6,12 +6,28 @@ if (surf_init) {
 	
 	if (dis > 4) {
 		surface_set_target(surf_edge);
-			draw_sprite_ext(s_dig, irandom(2), o_cloudia.x, o_cloudia.y-surface_height, 1, 1, random(360), c_white, 1);
-			lastx = o_cloudia.x;
-			lasty = o_cloudia.y;
+			draw_sprite_ext(s_dig, irandom(2), o_cloudia.x, o_cloudia.y-surface_height, 1.2, 1.2, random(360), c_white, 1);
 		surface_reset_target();
+		lastx = o_cloudia.x;
+		lasty = o_cloudia.y;
 	}
-	draw_surface_ext(surf_edge, 0, surface_height, 1, 1, 0, c_white, 1);
+		
+		//gpu_set_blendmode_ext(bm_inv_dest_alpha, bm_src_alpha);
+		gpu_set_blendmode(bm_add);
+			draw_sprite_ext(s_glow, 0, o_cloudia.x, o_cloudia.y, .5, .5, 0, c_lime, 1);
+		gpu_set_blendmode(bm_normal);
+		
+	if (dis > 4) {
+		surface_set_target(surf_tunnel);
+			draw_sprite_ext(s_dig, irandom(2), o_cloudia.x, o_cloudia.y-surface_height, 1, 1, random(360), c_white, 1);
+		surface_reset_target();
+		
+		
+	}
+	
+	shader_set(sh_cutoutWhite);
+		draw_surface_ext(surf_edge, 0, surface_height, 1, 1, 0, c_white, 1);
+	shader_reset();
 } else {
 	surf_dirt = surface_create(room_width, underground_height);	
 	surf_edge = surface_create(room_width, underground_height);	
@@ -23,6 +39,16 @@ if (surf_init) {
 	surface_reset_target();
 	
 	surface_set_target(surf_edge);
+		var tex = surface_get_texture(surf_dirt);
+		draw_primitive_begin_texture(pr_trianglestrip, tex);
+			draw_vertex_texture_color(0, 0, 0, 0, c_white, 1);
+			draw_vertex_texture_color(0, underground_height, 0, 1, c_black, 1);
+			draw_vertex_texture_color(room_width, 0, 1, 0, c_white, 1);
+			draw_vertex_texture_color(room_width, underground_height, 1, 1, c_black, 1);
+		draw_primitive_end();
+	surface_reset_target();
+	
+	surface_set_target(surf_tunnel);
 		var tex = surface_get_texture(surf_dirt);
 		draw_primitive_begin_texture(pr_trianglestrip, tex);
 			draw_vertex_texture_color(0, 0, 0, 0, c_white, 1);

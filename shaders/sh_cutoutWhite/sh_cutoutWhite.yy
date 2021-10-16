@@ -1,11 +1,11 @@
 {
   "type": 1,
   "parent": {
-    "name": "cbxJam_2021-10-15",
-    "path": "cbxJam_2021-10-15.yyp",
+    "name": "Shaders",
+    "path": "folders/Shaders.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Shader1",
+  "name": "sh_cutoutWhite",
   "tags": [],
   "resourceType": "GMShader",
 }
