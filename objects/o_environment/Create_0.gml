@@ -12,5 +12,4 @@ surf_init = false;
 lastx = o_cloudia.x;
 lasty = o_cloudia.y;
 
-audio_play_sound(snd_cloudiasong,1,true)
-audio_play_sound(snd_background,1,true)
+audio_play_sound(snd_background,5,10);

@@ -20,6 +20,7 @@
     {"id":{"name":"o_radar","path":"objects/o_radar/o_radar.yy",},"order":13,},
     {"id":{"name":"s_dig","path":"sprites/s_dig/s_dig.yy",},"order":5,},
     {"id":{"name":"o_cloudiaGlow","path":"objects/o_cloudiaGlow/o_cloudiaGlow.yy",},"order":7,},
+    {"id":{"name":"snd_bing","path":"sounds/snd_bing/snd_bing.yy",},"order":23,},
     {"id":{"name":"o_test","path":"objects/o_test/o_test.yy",},"order":15,},
     {"id":{"name":"sh_tunnelToBkg","path":"shaders/sh_tunnelToBkg/sh_tunnelToBkg.yy",},"order":1,},
     {"id":{"name":"o_bomb","path":"objects/o_bomb/o_bomb.yy",},"order":10,},
@@ -31,6 +32,7 @@
     {"id":{"name":"s_sphere","path":"sprites/s_sphere/s_sphere.yy",},"order":3,},
     {"id":{"name":"s_artifacts","path":"sprites/s_artifacts/s_artifacts.yy",},"order":7,},
     {"id":{"name":"Object9","path":"objects/Object9/Object9.yy",},"order":21,},
+    {"id":{"name":"snd_claudiasong","path":"sounds/snd_claudiasong/snd_claudiasong.yy",},"order":22,},
     {"id":{"name":"o_control","path":"objects/o_control/o_control.yy",},"order":8,},
     {"id":{"name":"s_cloudia","path":"sprites/s_cloudia/s_cloudia.yy",},"order":1,},
     {"id":{"name":"o_cloudia","path":"objects/o_cloudia/o_cloudia.yy",},"order":0,},
@@ -39,6 +41,7 @@
     {"id":{"name":"o_artifactCollect","path":"objects/o_artifactCollect/o_artifactCollect.yy",},"order":9,},
     {"id":{"name":"o_cloud","path":"objects/o_cloud/o_cloud.yy",},"order":3,},
     {"id":{"name":"s_powerup","path":"sprites/s_powerup/s_powerup.yy",},"order":10,},
+    {"id":{"name":"snd_background","path":"sounds/snd_background/snd_background.yy",},"order":10,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [
