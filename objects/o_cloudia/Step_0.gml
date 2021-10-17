@@ -23,3 +23,12 @@ if (moveY != 0) {
 phy_position_x += hspd;
 phy_position_y += vspd;
 
+movepwr = point_distance(0, 0, moveX, moveY);
+movedir = point_direction(0, 0, moveX, moveY);
+extend += ((1 + (.1 * movepwr)) - extend) / 5;
+
+if (movepwr > 0) {
+	drawdir -= angle_difference(drawdir, movedir) / 5;	
+} else {
+	drawdir -= angle_difference(drawdir, 270) / 5;	
+}

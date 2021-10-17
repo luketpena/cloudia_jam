@@ -1,6 +1,3 @@
-draw_set_color(c_black)
-draw_rectangle(0, surface_height, room_width, room_height, false)
-
 if (surf_init) {
 	var dis = point_distance(lastx, lasty, o_cloudia.x, o_cloudia.y);
 	
@@ -16,12 +13,9 @@ if (surf_init) {
 		surface_reset_target();
 	}
 	
-	shader_set(sh_cutoutWhite);
-		draw_surface_ext(surf_tunnel, 0, surface_height, 1, 1, 0, c_white, 1);
-	shader_reset();
-	gpu_set_blendmode(bm_add);
-			draw_sprite_ext(s_glow, 0, o_cloudia.x, o_cloudia.y, 1, 1, 0, c_lime, .3);
-		gpu_set_blendmode(bm_normal);
+
+
+	
 	shader_set(sh_cutoutWhite);
 		draw_surface_ext(surf_edge, 0, surface_height, 1, 1, 0, c_white, 1);
 	shader_reset();

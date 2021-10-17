@@ -1,0 +1,1 @@
+draw_sprite_ext(s_sphere, 0, x, y, 1, 1, image_angle, image_blend, 1);

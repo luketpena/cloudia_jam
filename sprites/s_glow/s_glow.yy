@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Shaders",
-    "path": "folders/Shaders.yy",
+    "name": "Sprites",
+    "path": "folders/Sprites.yy",
   },
   "resourceVersion": "1.0",
   "name": "s_glow",
