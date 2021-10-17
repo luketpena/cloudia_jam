@@ -14,6 +14,7 @@
     {"id":{"name":"o_factory","path":"objects/o_factory/o_factory.yy",},"order":19,},
     {"id":{"name":"s_dig","path":"sprites/s_dig/s_dig.yy",},"order":5,},
     {"id":{"name":"o_cloudiaGlow","path":"objects/o_cloudiaGlow/o_cloudiaGlow.yy",},"order":7,},
+    {"id":{"name":"snd_bing","path":"sounds/snd_bing/snd_bing.yy",},"order":23,},
     {"id":{"name":"o_test","path":"objects/o_test/o_test.yy",},"order":15,},
     {"id":{"name":"sh_tunnelToBkg","path":"shaders/sh_tunnelToBkg/sh_tunnelToBkg.yy",},"order":1,},
     {"id":{"name":"o_bomb","path":"objects/o_bomb/o_bomb.yy",},"order":11,},
