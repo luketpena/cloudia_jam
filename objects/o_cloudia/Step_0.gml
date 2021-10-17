@@ -35,3 +35,18 @@ if (movepwr > 0) {
 } else {
 	drawdir -= angle_difference(drawdir, 270) / 5;	
 }
+
+targetArtifact = instance_nearest(x, y, o_artifact);
+if targetArtifact {
+	if point_distance(x, y, targetArtifact.x, targetArtifact.y) < 16 {
+		if (aCharge < 1) {
+			aCharge += 1 / (room_speed * .25);	
+		} else {
+			aCharge = 0;
+			instance_destroy(targetArtifact);
+			global.score += 10;
+		}
+	} else {
+		aCharge = 0;	
+	}
+}

@@ -9,3 +9,7 @@ movepwr = 0;
 drawdir = 0;
 
 extend = 1;
+
+targetArtifact = noone;
+
+aCharge = 0;

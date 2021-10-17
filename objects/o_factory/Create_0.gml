@@ -32,3 +32,17 @@ for( var i=0; i<rows; i++ ) {
 	}
 	
 }
+
+curveBomb = animcurve_get_channel(c_lump, 2);
+
+for( var i=0; i<rows; i++ ) {
+	var y_mpy = animcurve_channel_evaluate(curveBomb, i/rows);
+	var chance = floor(y_mpy * 50);
+	var roll = irandom(chance);
+	if (roll = 0) {
+		var xx_tmp = random(room_width);
+		var yy_tmp = i * u_height;
+		instance_create_layer(xx_tmp, yy_tmp, layer, o_bomb);
+	}
+	
+}
