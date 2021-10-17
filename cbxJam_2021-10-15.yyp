@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"o_obstacle","path":"objects/o_obstacle/o_obstacle.yy",},"order":2,},
+    {"id":{"name":"snd_superspeed","path":"sounds/snd_superspeed/snd_superspeed.yy",},"order":12,},
     {"id":{"name":"approach","path":"scripts/approach/approach.yy",},"order":0,},
     {"id":{"name":"o_explodeDig","path":"objects/o_explodeDig/o_explodeDig.yy",},"order":14,},
     {"id":{"name":"s_explodeDig","path":"sprites/s_explodeDig/s_explodeDig.yy",},"order":11,},
@@ -20,6 +21,7 @@
     {"id":{"name":"sh_cutoutWhite","path":"shaders/sh_cutoutWhite/sh_cutoutWhite.yy",},"order":0,},
     {"id":{"name":"o_factory","path":"objects/o_factory/o_factory.yy",},"order":19,},
     {"id":{"name":"o_radar","path":"objects/o_radar/o_radar.yy",},"order":13,},
+    {"id":{"name":"snd_radar","path":"sounds/snd_radar/snd_radar.yy",},"order":11,},
     {"id":{"name":"s_dig","path":"sprites/s_dig/s_dig.yy",},"order":5,},
     {"id":{"name":"o_cloudiaGlow","path":"objects/o_cloudiaGlow/o_cloudiaGlow.yy",},"order":7,},
     {"id":{"name":"snd_bing","path":"sounds/snd_bing/snd_bing.yy",},"order":23,},
@@ -33,8 +35,10 @@
     {"id":{"name":"s_glow","path":"sprites/s_glow/s_glow.yy",},"order":2,},
     {"id":{"name":"s_sphere","path":"sprites/s_sphere/s_sphere.yy",},"order":3,},
     {"id":{"name":"s_artifacts","path":"sprites/s_artifacts/s_artifacts.yy",},"order":7,},
+    {"id":{"name":"snd_explode","path":"sounds/snd_explode/snd_explode.yy",},"order":25,},
     {"id":{"name":"Object9","path":"objects/Object9/Object9.yy",},"order":21,},
     {"id":{"name":"snd_claudiasong","path":"sounds/snd_claudiasong/snd_claudiasong.yy",},"order":22,},
+    {"id":{"name":"snd_explode_good","path":"sounds/snd_explode_good/snd_explode_good.yy",},"order":26,},
     {"id":{"name":"o_control","path":"objects/o_control/o_control.yy",},"order":8,},
     {"id":{"name":"s_cloudia","path":"sprites/s_cloudia/s_cloudia.yy",},"order":1,},
     {"id":{"name":"o_cloudia","path":"objects/o_cloudia/o_cloudia.yy",},"order":0,},
