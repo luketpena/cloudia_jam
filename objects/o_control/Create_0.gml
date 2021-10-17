@@ -1,3 +1,11 @@
-global.time = 3 * 60 * room_speed;
+global.time = 1 * 60 * room_speed;
 global.score = 0;
-global.gameOver = false;
+global.gameover = false;
+global.powerup = -1;
+
+powerupNames = [
+	"+ Time",
+	"Supersped",
+	"Bomb",
+	"Radar"
+];

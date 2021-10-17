@@ -13,6 +13,22 @@ if (surf_init) {
 		surface_reset_target();
 	}
 	
+	var boomNum = instance_number(o_explodeDig);
+	if (boomNum > 0) {
+		for (var i=0; i<boomNum; i++) {
+			var boom = instance_find(o_explodeDig, i);
+			surface_set_target(surf_edge);
+				draw_sprite_ext(s_explodeDig, 0, boom.x, boom.y-surface_height, 1.2, 1.2, random(360), c_white, 1);
+			surface_reset_target();
+
+
+			surface_set_target(surf_tunnel);
+				draw_sprite_ext(s_explodeDig, 0, boom.x, boom.y-surface_height, 1, 1, random(360), c_white, 1);
+			surface_reset_target();
+			instance_destroy(boom);
+		}
+	}
+	
 
 
 	

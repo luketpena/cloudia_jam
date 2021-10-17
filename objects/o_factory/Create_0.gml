@@ -14,7 +14,7 @@ for( var i=0; i<rows; i++ ) {
 	if (roll = 0) {
 		var xx_tmp = random(room_width);
 		var yy_tmp = i * u_height;
-		instance_create_layer(xx_tmp, yy_tmp, layer, o_artifact);
+		instance_create_layer(xx_tmp, o_environment.surface_height + 32 +  yy_tmp, layer, o_artifact);
 	}
 	
 }
@@ -28,7 +28,7 @@ for( var i=0; i<rows; i++ ) {
 	if (roll = 0) {
 		var xx_tmp = random(room_width);
 		var yy_tmp = i * u_height;
-		instance_create_layer(xx_tmp, yy_tmp, layer, o_obstacle);
+		instance_create_layer(xx_tmp,  o_environment.surface_height + 32 +  yy_tmp, layer, o_obstacle);
 	}
 	
 }
@@ -42,7 +42,21 @@ for( var i=0; i<rows; i++ ) {
 	if (roll = 0) {
 		var xx_tmp = random(room_width);
 		var yy_tmp = i * u_height;
-		instance_create_layer(xx_tmp, yy_tmp, layer, o_bomb);
+		instance_create_layer(xx_tmp,  o_environment.surface_height + 32 +  yy_tmp, layer, o_bomb);
+	}
+	
+}
+
+curvePowerup = animcurve_get_channel(c_lump, 3);
+
+for( var i=0; i<rows; i++ ) {
+	var y_mpy = animcurve_channel_evaluate(curvePowerup, i/rows);
+	var chance = floor(y_mpy * 30);
+	var roll = irandom(chance);
+	if (roll = 0) {
+		var xx_tmp = random(room_width);
+		var yy_tmp = i * u_height;
+		instance_create_layer(xx_tmp,  o_environment.surface_height + 32 + yy_tmp, layer, o_powerup);
 	}
 	
 }
