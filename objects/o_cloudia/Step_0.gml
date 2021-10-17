@@ -16,7 +16,7 @@ if (moveX != 0) {
 	hspd *= .9;	
 }
 
-if (moveY != 0 && phy_position_y >= 0) {
+if (moveY != 0) {
 	vspd = approach(vspd, moveY, accel);
 } else {
 	vspd *= .9;	
