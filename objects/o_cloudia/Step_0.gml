@@ -40,3 +40,18 @@ if (movepwr > 0 && music_playing = false) {
 	audio_play_sound(snd_claudiasong, 1,2);
 	music_playing = true
 }
+
+targetArtifact = instance_nearest(x, y, o_artifact);
+if targetArtifact {
+	if point_distance(x, y, targetArtifact.x, targetArtifact.y) < 16 {
+		if (aCharge < 1) {
+			aCharge += 1 / (room_speed * .25);	
+		} else {
+			aCharge = 0;
+			instance_destroy(targetArtifact);
+			global.score += 10;
+		}
+	} else {
+		aCharge = 0;	
+	}
+}
