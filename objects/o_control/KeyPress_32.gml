@@ -2,6 +2,7 @@ switch(global.powerup) {
 	case 1:
 		o_cloudia.movespd = 4;
 		alarm[0] = 5 * room_speed;
+		audio_play_sound(snd_superspeed, 1, false);
 		break;
 		
 	case 2:
@@ -17,6 +18,7 @@ switch(global.powerup) {
 			o.image_index = a.index;
 			o.image_angle = a.image_index;
 		}
+		audio_play_sound(snd_radar, 1, false);
 		break;
 }
 
