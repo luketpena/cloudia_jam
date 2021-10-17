@@ -35,3 +35,8 @@ if (movepwr > 0) {
 } else {
 	drawdir -= angle_difference(drawdir, 270) / 5;	
 }
+
+if (movepwr > 0 && music_playing = false) {
+	audio_play_sound(snd_claudiasong, 1,2);
+	music_playing = true
+}
