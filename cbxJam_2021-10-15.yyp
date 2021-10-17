@@ -20,6 +20,7 @@
     {"id":{"name":"s_sphere","path":"sprites/s_sphere/s_sphere.yy",},"order":3,},
     {"id":{"name":"s_artifacts","path":"sprites/s_artifacts/s_artifacts.yy",},"order":7,},
     {"id":{"name":"Object9","path":"objects/Object9/Object9.yy",},"order":21,},
+    {"id":{"name":"o_control","path":"objects/o_control/o_control.yy",},"order":8,},
     {"id":{"name":"s_cloudia","path":"sprites/s_cloudia/s_cloudia.yy",},"order":1,},
     {"id":{"name":"o_cloudia","path":"objects/o_cloudia/o_cloudia.yy",},"order":0,},
     {"id":{"name":"o_bkg","path":"objects/o_bkg/o_bkg.yy",},"order":5,},
