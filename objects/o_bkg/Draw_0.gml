@@ -23,6 +23,12 @@ if (surface_exists(o_environment.surf_tunnel)) {
 		draw_sprite_ext(s_glow, 0, x, y, 1, 1, 0, c_red, .75 + .25 * s);
 	}
 	
+	// PU glows
+	for (var i=0; i<instance_number(o_powerup); i++) {
+		var o = instance_find(o_powerup, i);
+		draw_sprite_ext(s_glow, 0, o.x, o.y, .5, .5, 0, c_aqua, .5);
+	}
+	
 	gpu_set_blendmode(bm_normal);
 		
 	shader_set(sh_tunnelToBkg);

@@ -10,8 +10,10 @@ if (!global.gameover) {
 	draw_text(view_get_wport(view_camera[0]) - 16, 16, global.score);
 } else {
 	draw_set_halign(fa_center);
-	draw_text(128, 128, "Your score: " + string(global.score));
-	draw_text(128, 200, "Press space to restart");
+	var centerx = view_get_wport(view_camera[0]) / 2;
+	var centery = view_get_hport(view_camera[0]) / 2;
+	draw_text(centerx, centery, "Your score: " + string(global.score));
+	draw_text(centerx, centery+32, "Press space to restart");
 	if (keyboard_check_pressed(vk_space)) {
 		game_restart();	
 	}

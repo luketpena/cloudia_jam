@@ -1,6 +1,6 @@
 switch(global.powerup) {
 	case 1:
-		o_cloudia.movespd *= 2;
+		o_cloudia.movespd = 4;
 		alarm[0] = 5 * room_speed;
 		break;
 		
