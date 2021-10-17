@@ -8,6 +8,7 @@
     {"id":{"name":"o_powerup","path":"objects/o_powerup/o_powerup.yy",},"order":12,},
     {"id":{"name":"cloudia_sprite","path":"sprites/cloudia_sprite/cloudia_sprite.yy",},"order":0,},
     {"id":{"name":"o_environment","path":"objects/o_environment/o_environment.yy",},"order":4,},
+    {"id":{"name":"o_explosion_parent","path":"objects/o_explosion_parent/o_explosion_parent.yy",},"order":24,},
     {"id":{"name":"s_cloud","path":"sprites/s_cloud/s_cloud.yy",},"order":4,},
     {"id":{"name":"o_artifact","path":"objects/o_artifact/o_artifact.yy",},"order":6,},
     {"id":{"name":"o_explosion","path":"objects/o_explosion/o_explosion.yy",},"order":11,},
