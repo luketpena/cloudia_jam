@@ -38,8 +38,13 @@ if (!global.gameover) {
 	}
 
 	if (movepwr > 0 && music_playing = false) {
-		audio_play_sound(snd_claudiasong, 1,2);
+		audio_play_sound(snd_claudiasong, 1,false);
 		music_playing = true
+	}
+	
+	if (bg_audio = false) {
+		audio_play_sound(snd_background,5,true);
+		bg_audio = true;
 	}
 
 	targetArtifact = instance_nearest(x, y, o_artifact);
@@ -50,7 +55,7 @@ if (!global.gameover) {
 			} else {
 				aCharge = 0;
 				instance_destroy(targetArtifact);
-				global.score += 10;
+				//global.score += 10;
 			}
 		} else {
 			aCharge = 0;	

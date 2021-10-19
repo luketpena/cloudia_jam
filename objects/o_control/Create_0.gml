@@ -5,7 +5,7 @@ global.powerup = 1;
 
 powerupNames = [
 	"+ Time",
-	"Supersped",
+	"Superspeed",
 	"Bomb",
 	"Radar"
 ];

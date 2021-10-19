@@ -1,7 +1,8 @@
 if (global.time > 0) {
 	global.time--;	
 } else {
-	global.gameover = true;	
+	//global.gameover = true;	
+	game_restart();
 }
 
 if (global.powerup = 0) {

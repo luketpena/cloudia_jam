@@ -7,5 +7,6 @@ if (active) {
 	if (charge < 2 * room_speed) charge++ else {
 		instance_create_layer(x, y, "effects_top", o_explosion);
 		instance_destroy();	
+		audio_play_sound(snd_explode,11,false);
 	}
 }

@@ -1,3 +1,4 @@
+
 if (surf_init) {
 	var dis = point_distance(lastx, lasty, o_cloudia.x, o_cloudia.y);
 	
@@ -65,4 +66,17 @@ if (surf_init) {
 		draw_primitive_end();
 	surface_reset_target();
 	surf_init = true;
+	
+	
+}
+
+if (!bg_audio) {
+
+	try { 
+		audio_play_sound_at(snd_background, 0,(room_width * 0.5),0,room_height * 0.2, room_height * 0.7, 0.9, true, 15 );
+		bg_audio = true;
+	}
+	catch (e) {
+		debug_event(e);
+	}
 }
